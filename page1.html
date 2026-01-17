@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Innovation 2026</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>/* About Page Specific Styles */
+.about-container {
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.about-hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #4a5568;
+}
+
+/* Stats Grid Styling */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.stat-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+    border: 1px solid #eee;
+}
+
+.stat-card h3 {
+    font-size: 2.5rem;
+    color: #667eea;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    font-weight: 600;
+    color: #718096;
+    margin-bottom: 0;
+}
+
+/* Mission Section Styling */
+.mission-section {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 30px;
+    border: 1px solid var(--glass-border);
+    display: flex;
+    justify-content: center;
+}
+
+.mission-text {
+    max-width: 600px;
+    text-align: center;
+}
+
+.mission-text h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.mission-text .btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about-hero h1 { font-size: 2.2rem; }
+    .mission-section { padding: 30px; }
+}
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="page1.html" class="active">About</a></li>
+            <li><a href="page2.html">Pricing</a></li>  
+            <li><a href="page3.html">Learn</a></li>  
+            <li><a href="page4.html">Terms</a></li>
+            <li><a href="index.html">Login</a></li>  
+        </ul>
+    </nav>
+
+    <main class="about-container">
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <h1>We're building the future of web experiences.</h1>
+            <p>Founded in 2024, our mission is to simplify the complex and make the digital world accessible to everyone.</p>
+        </section>
+
+        <!-- Stats Grid (Social Proof) -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>10M+</h3>
+                <p>Active Users</p>
+            </div>
+            <div class="stat-card">
+                <h3>99.9%</h3>
+                <p>Uptime</p>
+            </div>
+            <div class="stat-card">
+                <h3>24/7</h3>
+                <p>Global Support</p>
+            </div>
+        </div>
+
+        <!-- Mission Content -->
+        <section class="mission-section">
+            <div class="mission-text">
+                <h2>Our Mission</h2>
+                <p>In a rapidly evolving technological landscape, we focus on human-centric design. We believe that technology should serve people, not the other way around. Every line of code we write is a step toward a more connected and efficient world.</p>
+                <a href="page3.html" class="btn-primary">Our Learning Journey</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+

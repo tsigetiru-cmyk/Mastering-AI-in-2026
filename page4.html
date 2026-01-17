@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Core Variables for 2026 Aesthetics */
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --primary-accent: #667eea; /* Clean, bold primary */
+  --text-main: #1a202c;
+  --bg-gradient: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); /* Warm neutral */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif; /* Modern scannable font */
+}
+
+body {
+  background: var(--bg-gradient);
+  min-height: 100vh;
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+}
+
+/* 1. Navigation: Floating Glass Design */
+nav {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px); /* Glassmorphism */
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary-accent);
+  transform: translateY(-2px);
+}
+
+/* 2. Centered Login & Content Layout */
+main, .Login {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Bento-style Card */
+form, .terms-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+  border: 1px solid #eee;
+}
+
+.terms-card { max-width: 800px; } /* Wider for legal text */
+
+/* 3. Modern Input & Button Styles */
+input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #f8fafc;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-accent);
+  background: white;
+}
+
+input[type="submit"] {
+  background: var(--primary-accent);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+  filter: brightness(1.1);
+  transform: scale(1.02); /* Subtle micro-interaction */
+}
+
+/* 4. Typography Hierarchy for Terms Page */
+h1 { font-size: 2.5rem; margin-bottom: 1rem; color: #111; }
+h2 { font-size: 1.25rem; margin: 2rem 0 0.5rem; color: var(--primary-accent); }
+p { line-height: 1.7; color: #4a5568; margin-bottom: 1rem; }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="page1.html">About</a></li>
+            <li><a href="page2.html">Pricing</a></li>  
+            <li><a href="page3.html">Learn</a></li>  
+            <li><a href="page4.html" class="active">Terms</a></li>
+            <li><a href="index.html">Login</a></li>  
+        </ul>
+    </nav>
+
+    <main class="terms-container">
+        <section class="terms-card">
+            <h1>Terms of Service</h1>
+            <p class="last-updated">Last Updated: January 17, 2026</p>
+
+            <h2>1. Agreement to Terms</h2>
+            <p>By accessing our website, you agree to be bound by these Terms of Service and all applicable laws and regulations.</p>
+
+            <h2>2. Intellectual Property</h2>
+            <p>The content, organization, graphics, and design related to this site are protected under applicable copyrights and trademarks.</p>
+
+            <h2>3. User Responsibilities</h2>
+            <p>You are responsible for maintaining the confidentiality of your login credentials and for all activities that occur under your account.</p>
+
+            <h2>4. Limitation of Liability</h2>
+            <p>We shall not be held liable for any damages arising out of the use or inability to use the materials on our website.</p>
+
+            <h2>5. Contact Us</h2>
+            <p>If you have any questions about these Terms, please contact us at support@example.com.</p>
+            
+            <div class="terms-footer">
+                <a href="index.html" class="btn-back">Accept & Return to Login</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

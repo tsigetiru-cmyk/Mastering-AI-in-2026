@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn AI - 2026 Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Learn Page Specifics */
+.learn-main {
+    flex-direction: column;
+    padding: 40px 5%;
+}
+
+.learn-hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.knowledge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 60px;
+}
+
+.info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #eef2f6;
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+}
+
+.info-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+
+.cta-box {
+    background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+    width: 100%;
+    max-width: 1200px;
+    padding: 60px;
+    border-radius: 30px;
+    text-align: center;
+    border: 1px dashed var(--primary);
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- MASTER NAV -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">FUTURE<span>WEB</span></div>
+            <ul>
+                <li><a href="page1.html">About</a></li>
+                <li><a href="page2.html">Pricing</a></li>  
+                <li><a href="page3.html" class="active">Learn</a></li>  
+                <li><a href="page4.html">Terms</a></li>
+                <li><a href="index.html" class="nav-btn">Login</a></li>  
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CONTENT AREA -->
+    <main class="learn-main">
+        <header class="learn-hero">
+            <h1>Mastering AI in 2026</h1>
+            <p>From prompt engineering to autonomous agents, explore the new frontier of learning.</p>
+        </header>
+
+        <div class="knowledge-grid">
+            <!-- Card 1 -->
+            <div class="info-card">
+                <div class="icon">🤖</div>
+                <h3>Neural Patterns</h3>
+                <p>AI doesn't follow instructions; it recognizes patterns. Learn how deep learning mimics human brain structures.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="info-card">
+                <div class="icon">✍️</div>
+                <h3>Natural Language</h3>
+                <p>In 2026, English is the most popular programming language. Master the art of communicating with LLMs.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="info-card">
+                <div class="icon">🔒</div>
+                <h3>Ethics & Safety</h3>
+                <p>Understand the importance of data privacy, bias detection, and responsible AI deployment in the modern era.</p>
+            </div>
+        </div>
+
+        <section class="cta-box">
+            <h2>Ready to start your journey?</h2>
+            <p>Join 50,000+ students learning to build with AI this year.</p>
+            <button class="btn-primary">View Full Curriculum</button>
+        </section>
+    </main>
+
+    <!-- MASTER FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 FutureWeb Inc. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="page4.html">Privacy</a>
+                <a href="page4.html">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
